@@ -8,12 +8,12 @@ ext {
     libraryName = 'YashoDB'
     artifact = 'yashodb'
 
-    libraryDescription = 'MMV is a sample Android coding framework that makes it possible to easily implement complicated apps.'
+    libraryDescription = 'JSON based data base similar to MongoDB but works locally over a file like SQLite.'
 
     siteUrl = 'https://git.yashoid.com/yashoid/yashodb'
     gitUrl = 'https://git.yashoid.com/yashoid/yashodb.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.2'
 
     developerId = 'yasharpm'
     developerName = 'Yashar PourMohammad'
