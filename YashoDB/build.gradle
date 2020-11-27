@@ -1,0 +1,35 @@
+apply plugin: 'java-library'
+
+ext {
+    bintrayRepo = 'YashoidLibraries'
+    bintrayName = 'yashodb'
+
+    publishedGroupId = 'com.yashoid'
+    libraryName = 'YashoDB'
+    artifact = 'yashodb'
+
+    libraryDescription = 'MMV is a sample Android coding framework that makes it possible to easily implement complicated apps.'
+
+    siteUrl = 'https://git.yashoid.com/yashoid/yashodb'
+    gitUrl = 'https://git.yashoid.com/yashoid/yashodb.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'yasharpm'
+    developerName = 'Yashar PourMohammad'
+    developerEmail = 'yasharpm@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
